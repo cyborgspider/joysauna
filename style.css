@@ -982,6 +982,7 @@ blockquote p {
   margin: 0 0 20px 0;
   text-align: center;
   border: 3px solid #dee3e4;
+  padding: 0 1em;
 /*border-radius*/
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -1062,6 +1063,12 @@ blockquote p {
   color: #979797;
 }
 
+.plan-wrap .options li span.info{
+  line-height:1.5;
+  display:block;
+  padding:2em;
+}
+
 .plan-wrap .button {
   display: inline-block;
   width: 80%;
@@ -1078,7 +1085,7 @@ blockquote p {
 }
 
 #price-tables #plans .plan {
-  width: 24%;
+  width: 32%;
   margin: 1.2em 1.33% 20px 0;
 }
 
