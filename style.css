@@ -341,19 +341,19 @@ blockquote p {
 .logo {
   display: block;
   float: left;
-  width: 104px;
+  width: 126px;
   height: 46px;
   text-indent: -9999px;
   background: url(images/logo.svg) no-repeat;
-  background-size: 104px 46px;
+  background-size: 126px 46px;
 }
-
+/*
 .logo:hover, .logo:focus {
   -webkit-animation: rubberBand 0.5s 1;
      -moz-animation: rubberBand 0.5s 1;
        -o-animation: rubberBand 0.5s 1;
           animation: rubberBand 0.5s 1;
-}
+}*/
 
 .header-default {
   background: #2C2D31;
@@ -1225,6 +1225,8 @@ address i {
   left: 0;
 }
 
+address h4{margin-bottom:4px;line-height:1;}
+
 .address span {
   line-height: 1.1;
   margin-bottom: 3px;
@@ -1371,7 +1373,7 @@ input:not([type=submit]):not([type=file]):focus, textarea:focus {
 ********************************************************* */
 
 footer {
-  background:#2C2D31;
+  background:#77a17b;
 }
 
 footer .grid {
