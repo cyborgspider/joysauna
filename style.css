@@ -21,6 +21,7 @@
 11. Footer
 12. Loader
 13. Clearfix
+14. Service Items
 
 
 [Color codes]
@@ -144,6 +145,11 @@ blockquote p {
 .ta-left{
   text-align:left;
 }
+.lh{
+  line-height: 1.5;
+}
+.mb0{margin-bottom:0;}.mb10{margin-bottom:10px}.mb5{margin-bottom:5px;}
+.mt0{margin-top:0;}.mt10{margin-top:10px;}.mt5{margin-top:5px;}
 
 .curveUpColor, .curveDownColor {
   fill: #fff;
@@ -190,6 +196,7 @@ blockquote p {
      -moz-border-radius: 30px;
           border-radius: 30px;
   background:#1abc9c;
+  transition:background-color 0.2s ease-in-out;
 }
 
 .btn:hover, .btn:focus, .btn-current {
@@ -197,7 +204,7 @@ blockquote p {
   background: #16a085;
 }
 
-.btn:hover, .social-set a:hover, .team-social a i:hover, .header-carousel .owl-buttons .owl-prev:hover, .header-carousel .owl-buttons .owl-next:hover {
+.social-set a:hover, .team-social a i:hover, .header-carousel .owl-buttons .owl-prev:hover, .header-carousel .owl-buttons .owl-next:hover {
   -webkit-animation: rubberBand .8s 1;
      -moz-animation: rubberBand .8s 1;
        -o-animation: rubberBand .8s 1;
@@ -293,6 +300,7 @@ blockquote p {
   margin: 1.5em 0 1.8em;
   padding: .5em;
   letter-spacing: 2px;
+  font-size:18px;
 }
 
 .btn-disabled, .btn-disabled:hover, .btn-disabled:focus {
@@ -506,18 +514,23 @@ blockquote p {
   height: 700px;
   background-repeat: repeat;
   background-position: center center;
+  background-size: cover;
+}
+
+.home-slider h2{
+  text-shadow:1px 1px 2px #000000;
 }
 
 .home-slide-1 {
-  background-image: url('images/slider/big1.jpg');
+  background-image: url('images/slider/ss-1.jpg');
 }
 
 .home-slide-2 {
-  background-image: url('images/slider/big2.jpg');
+  background-image: url('images/slider/ss-2.jpg');
 }
 
 .home-slide-3 {
-  background-image: url('images/slider/big3.jpg');
+  background-image: url('images/slider/ss-3.jpg');
 }
 
 /* *********************************************************
@@ -959,28 +972,32 @@ blockquote p {
   Pricing Section
 ********************************************************* */
 
-#plans,#plans ul,#plans ul li {
+.plans,.plans ul,.plans ul li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.plans.white .plan{
+  background:white;
+}
+
 .options li:last-child {
 }
 
-#price-tables:after {
+.price-tables:after {
   display: table;
   clear: both;
   content: '';
 }
 
-#price-tables {
+.price-tables {
   max-width: 69em;
   margin: 0 auto;
   text-align: center;
 }
 
-#price-tables #plans .plan {
+.price-tables .plans .plan {
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
@@ -999,6 +1016,12 @@ blockquote p {
   margin: 0;
   padding: .6em 0;
   color:#1abc9c;
+  line-height:1.3;
+}
+
+.plan-wrap .title em{
+  display:block;
+  margin-top:-15px;
 }
 
 .plan-wrap .title h2.best-plan-title {
@@ -1053,7 +1076,7 @@ blockquote p {
 }
 
 .plan-wrap .options {
-  margin-top: 10em;
+  margin-top: 2em;
 }
 
 .plan-wrap .options li {
@@ -1065,6 +1088,11 @@ blockquote p {
 .plan-wrap .options li span {
   font-weight: 400;
   color: #979797;
+}
+
+.plan-wrap .options li span.time{
+  line-height:1;
+  display:block;
 }
 
 .plan-wrap .options li span.info{
@@ -1084,20 +1112,20 @@ blockquote p {
           border-radius: 5px;
 }
 
-#price-tables {
+.price-tables {
   margin: 2em auto;
 }
 
-#price-tables #plans .plan {
+.price-tables .plans .plan {
   width: 32%;
   margin: 1.2em 1.33% 20px 0;
 }
 
-#price-tables #plans > li:last-child {
+.price-tables .plans > li:last-child {
   margin-right: 0;
 }
 
-#price-tables #plans .best-plan {
+.price-tables .plans .best-plan {
   border-color: #484f58;
 }
 
@@ -1628,6 +1656,26 @@ footer p, footer a {
     transform: translateY(0);
   }
 }
+/* *********************************************************
+  Service Items
+********************************************************* */
+.service-item{
+  text-align: center;
+  padding-bottom:20px;
+}
+
+.service-item h2{
+  font-size:24px;
+  color:#77C677;
+  line-height: 1.3;
+}
+.service-item h3{
+  font-size:18px;
+  color:#77C677;
+}
+.service-item .btn{
+  margin-bottom:5px;
+}
 
 /*-------------------------------------------------------------
   Media queries
@@ -1638,12 +1686,12 @@ footer p, footer a {
     padding: 15px 20px;
   }
 
-  #price-tables #plans .plan {
+  .price-tables .plans .plan {
     width: 49%;
     margin: 0 2% 20px 0;
   }
 
-  #price-tables #plans > li:nth-child(2n) {
+  .price-tables .plans > li:nth-child(2n) {
     margin-right: 0!important;
   }
 
@@ -1763,12 +1811,12 @@ footer p, footer a {
     font-size: 2em;
   }
 
-  #price-tables #plans .plan {
+  .price-tables .plans .plan {
     width: 100%;
     margin: 0 2% 20px 0;
   }
 
-  #price-tables #plans > li:nth-child(2n) {
+  .price-tables .plans > li:nth-child(2n) {
     margin-right: 0;
   }
 }

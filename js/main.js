@@ -52,6 +52,12 @@ $(window).load(function() {
 
 $('a[data-rel^=lightcase]').lightcase();
 
+//Equal Height
+$(window).load(function() {
+  equalheight('.plan');
+  equalheight('.service-item > .title');
+});
+
 
 // Carousels
   $('.cl-client-carousel').owlCarousel({
