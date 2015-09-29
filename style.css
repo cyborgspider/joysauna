@@ -148,8 +148,8 @@ blockquote p {
 .lh{
   line-height: 1.5;
 }
-.mb0{margin-bottom:0;}.mb10{margin-bottom:10px}.mb5{margin-bottom:5px;}
-.mt0{margin-top:0;}.mt10{margin-top:10px;}.mt5{margin-top:5px;}
+.mb0{margin-bottom:0;}.mb10{margin-bottom:10px}.mb5{margin-bottom:5px;}.mb30{margin-bottom:30px;}.mb20{margin-bottom:20px;}
+.mt0{margin-top:0;}.mt10{margin-top:10px;}.mt5{margin-top:5px;}.mt30{margin-top:30px;}.mt20{margin-top:20px;}
 
 .curveUpColor, .curveDownColor {
   fill: #fff;
@@ -300,7 +300,8 @@ blockquote p {
   margin: 1.5em 0 1.8em;
   padding: .5em;
   letter-spacing: 2px;
-  font-size:18px;
+  font-size:22px;
+  background-color:#58d9e8;
 }
 
 .btn-disabled, .btn-disabled:hover, .btn-disabled:focus {
@@ -445,7 +446,7 @@ blockquote p {
 }
 
 .navigation a {
-  font-size: .8em;
+  font-size: 18px;
   display: block;
   margin-left: 20px;
   padding-bottom: 3px;
@@ -518,7 +519,7 @@ blockquote p {
 }
 
 .home-slider h2{
-  text-shadow:1px 1px 2px #000000;
+  margin-bottom:24px;
 }
 
 .home-slide-1 {
@@ -1668,6 +1669,8 @@ footer p, footer a {
   font-size:24px;
   color:#77C677;
   line-height: 1.3;
+  text-transform: capitalize;
+  margin-top:5px;
 }
 .service-item h3{
   font-size:18px;
@@ -1675,6 +1678,13 @@ footer p, footer a {
 }
 .service-item .btn{
   margin-bottom:5px;
+}
+.service-item p{
+  color:#000;
+}
+.service-item img{
+  width:112px;
+  height:112px;
 }
 
 /*-------------------------------------------------------------
