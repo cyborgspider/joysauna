@@ -28,6 +28,7 @@
 Green #1abc9c
 Dark Blue #16a085
 Grey #ECF0F1
+Maroon #b24171
 
 */
 
@@ -52,6 +53,8 @@ Grey #ECF0F1
   background: #E6F1E7;
   padding: 100px 0 150px;
 }
+.maroon{color:#b24171;}
+.evergreen{color:#007e65;}
 
 em{font-style:italic;}
 
@@ -75,11 +78,11 @@ body {
   font-size: 1em;
   line-height: 1.7em;
   color: #777777;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 body, input, textarea {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6, .navigation a, .btn, .filters .filter {
@@ -127,6 +130,7 @@ blockquote {
 blockquote p {
   margin-bottom: 0 !important;
 }
+p > b{font-weight:700;color:#484f58;font-size:18px;}
 
 .pleft-25 {
   padding-left: 25px;
@@ -148,8 +152,10 @@ blockquote p {
 .lh{
   line-height: 1.5;
 }
-.mb0{margin-bottom:0;}.mb10{margin-bottom:10px}.mb5{margin-bottom:5px;}.mb30{margin-bottom:30px;}.mb20{margin-bottom:20px;}
-.mt0{margin-top:0;}.mt10{margin-top:10px;}.mt5{margin-top:5px;}.mt30{margin-top:30px;}.mt20{margin-top:20px;}
+.mb0{margin-bottom:0;}.mb10{margin-bottom:10px}.mb5{margin-bottom:5px;}.mb30{margin-bottom:30px;}.mb20{margin-bottom:20px;}.mb40{margin-bottom:40px;}
+.mt0{margin-top:0;}.mt10{margin-top:10px;}.mt5{margin-top:5px;}.mt30{margin-top:30px;}.mt20{margin-top:20px;}.mt40{margin-top:40px;}
+
+.note > a{color:#484f58;text-decoration: underline !important}
 
 .curveUpColor, .curveDownColor {
   fill: #fff;
@@ -1004,7 +1010,6 @@ blockquote p {
   margin: 0 0 20px 0;
   text-align: center;
   border: 3px solid #dee3e4;
-  padding: 0 1em;
 /*border-radius*/
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -1041,6 +1046,33 @@ blockquote p {
   color: #fff;
 }
 
+.plan-wrap .title h2.pass-title{
+  color:#fff;
+  background:#ff5a89;
+  border-bottom:none;
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.plan-wrap .title h2.services-title{
+  color:#fff;
+  background:#f05c5c;
+  border-bottom:none;
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.plan-wrap .title h2.acupressure-title{
+  color:#fff;
+  background:#ff984c;
+  border-bottom:none;
+  font-size:20px;
+  padding:1em 0;
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+
 .plan-wrap .price p {
   font-size: 1.2em;
   font-weight: 700;
@@ -1072,34 +1104,42 @@ blockquote p {
   background: #484f58;
 }
 
-.plan-wrap .price p span {
-  color: #394879;
-}
-
 .plan-wrap .options {
-  margin-top: 2em;
+  padding:1em 20px 10px;
+  text-align:left;
+  font-size:18px;
 }
 
 .plan-wrap .options li {
   font-weight: 700;
-  line-height: 2.5;
+  line-height: 3;
   color: #484f58;
+  clear:both;
+  display:table;
+  width:100%;
 }
 
-.plan-wrap .options li span {
+.plan-wrap .options li .desc{
+  width:84%;
+  display:table-cell;
+}
+.desc.long{line-height:1.4;}
+
+.plan-wrap .options li .price {
   font-weight: 400;
   color: #979797;
+  width:16%;
+  display:table-cell;
+  text-align: left;
 }
 
-.plan-wrap .options li span.time{
-  line-height:1;
-  display:block;
-}
-
-.plan-wrap .options li span.info{
+.plan-wrap .options li .info{
   line-height:1.5;
   display:block;
-  padding:2em;
+  font-size:14px;
+  font-weight:400;
+  color:#8b8b8b;
+  padding:10px 0 20px;
 }
 
 .plan-wrap .button {
@@ -1118,11 +1158,11 @@ blockquote p {
 }
 
 .price-tables .plans .plan {
-  width: 32%;
-  margin: 1.2em 1.33% 20px 0;
+  width: 31%;
+  margin: 1.2em 3.33% 20px 0;
 }
 
-.price-tables .plans > li:last-child {
+.price-tables .plans > .plan:last-child {
   margin-right: 0;
 }
 
@@ -1701,7 +1741,7 @@ footer p, footer a {
     margin: 0 2% 20px 0;
   }
 
-  .price-tables .plans > li:nth-child(2n) {
+  .price-tables .plans > .plan:nth-child(2n) {
     margin-right: 0!important;
   }
 
@@ -1826,7 +1866,7 @@ footer p, footer a {
     margin: 0 2% 20px 0;
   }
 
-  .price-tables .plans > li:nth-child(2n) {
+  .price-tables .plans > .plan:nth-child(2n) {
     margin-right: 0;
   }
 }
