@@ -55,6 +55,9 @@ Maroon #b24171
 }
 .maroon{color:#b24171;}
 .evergreen{color:#007e65;}
+.aqua{color:#00c2d9;}
+
+.list-bullet{list-style: disc}
 
 em{font-style:italic;}
 
@@ -110,7 +113,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 24px;
   line-height: .9em;
 }
 
@@ -307,7 +310,7 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
   padding: .5em;
   letter-spacing: 2px;
   font-size:22px;
-  background-color:#58d9e8;
+  background-color:#00c2d9;
 }
 
 .btn-disabled, .btn-disabled:hover, .btn-disabled:focus {
@@ -1054,6 +1057,7 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
 }
+.plan-wrap .title h2.pass-title.men{background:#93ba48;}
 .plan-wrap .title h2.services-title{
   color:#fff;
   background:#f05c5c;
@@ -1065,6 +1069,19 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
 .plan-wrap .title h2.acupressure-title{
   color:#fff;
   background:#ff984c;
+  border-bottom:none;
+  font-size:20px;
+  padding:1em 0;
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.plan-wrap .title h2.acupressure-title.men{
+  background:#48ba63;
+}
+.plan-wrap .title h2.service-title{
+  color:#fff;
+  background:#007e65;
   border-bottom:none;
   font-size:20px;
   padding:1em 0;
@@ -1707,14 +1724,14 @@ footer p, footer a {
 
 .service-item h2{
   font-size:24px;
-  color:#77C677;
+  color:#7cc66d;
   line-height: 1.3;
   text-transform: capitalize;
   margin-top:5px;
 }
 .service-item h3{
   font-size:18px;
-  color:#77C677;
+  color:#7cc66d;
 }
 .service-item .btn{
   margin-bottom:5px;

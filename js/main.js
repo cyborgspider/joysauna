@@ -55,7 +55,7 @@ $('a[data-rel^=lightcase]').lightcase();
 //Equal Height
 $(window).load(function() {
   equalheight('.plan');
-  equalheight('.service-item > .title');
+  equalheight('.service-item > .price');
 });
 
 
