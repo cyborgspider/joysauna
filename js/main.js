@@ -53,29 +53,14 @@ $(window).load(function() {
 $('a[data-rel^=lightcase]').lightcase();
 
 //Equal Height
-$(window).load(function() {
+function setEqualHeight(){
   equalheight('.plan');
-  equalheight('.service-item > .price');
-});
+  equalheight('.service-item > .title');
+}
+setEqualHeight();
 
 
 // Carousels
-  $('.cl-client-carousel').owlCarousel({
-      pagination:true,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
-      autoPlay:true,
-  });
-
-  $('.cl-logo-carousel').owlCarousel({
-	  items : 6,
-      itemsDesktop : [1199,5],
-      itemsDesktopSmall : [979,3],
-      stopOnHover:true,
-      autoPlay:3000,
-  });
-
     $(".header-carousel").owlCarousel({
         pagination:true,
         navigation : true, // Show next and prev buttons
@@ -116,15 +101,15 @@ $(function() {
 //Header Class Change on Resize
   var $window = $(window);
 
-      // Function to handle changes to style classes based on window width
-      function checkWidth() {
-      if ($window.width() < 767) {
-          $('#top-header').removeClass('header-home').addClass('header-default');
-          };
+  // Function to handle changes to style classes based on window width
+  function checkWidth() {
+    if ($window.width() < 767) {
+        $('#top-header').removeClass('header-home').addClass('header-default');
+        };
 
-      if ($window.width() >= 767) {
-          $('#top-header').removeClass('header-default').addClass('header-home');
-      }
+    if ($window.width() >= 767) {
+        $('#top-header').removeClass('header-default').addClass('header-home');
+    }
   }
 
   // Execute on load
@@ -132,4 +117,6 @@ $(function() {
 
   // Bind event listener
   $(window).resize(checkWidth);
+  $(window).resize(setEqualHeight);
+
 });
