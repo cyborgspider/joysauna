@@ -115,7 +115,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  line-height: .9em;
+  line-height: 1.2;
 }
 
 h4,h5,h6 {
@@ -1353,6 +1353,8 @@ address h4{margin-bottom:4px;line-height:1;}
   line-height: 45px;
   color: #16a085;
 }
+
+address > div > p{overflow:hidden;}
 
 /* Form, Comments and Contact */
 
