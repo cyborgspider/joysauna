@@ -189,7 +189,7 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
   fill: #ECF0F1;
   stroke: #ECF0F1;
 }
-.acupuncture{padding-top:0;}
+.acupressure{padding-top:0;}
 .gallery{padding-top:0;}
 
 /* *********************************************************
@@ -1175,6 +1175,10 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
   color:#8b8b8b;
   padding:10px 0 20px;
 }
+.plan-wrap .options li .info.no-padding{
+  padding-top:0;
+  margin-top:-10px;
+}
 
 .plan-wrap .button {
   display: inline-block;
@@ -1858,7 +1862,7 @@ footer p, footer a {
     top: 7px;
     color: #fff;
     min-height: 2.25em;
-    padding: .45em;
+    padding: 1em;
     font-size: 1.1em;
     margin: 0;
   }
