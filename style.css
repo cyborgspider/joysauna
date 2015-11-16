@@ -189,6 +189,8 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
   fill: #ECF0F1;
   stroke: #ECF0F1;
 }
+.acupuncture{padding-top:0;}
+.gallery{padding-top:0;}
 
 /* *********************************************************
   Buttons
@@ -1006,6 +1008,7 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
   margin: 0 auto;
   text-align: center;
 }
+.price-tables.mb0{margin-bottom:0;}
 
 .price-tables .plans .plan {
   float: left;
@@ -1196,6 +1199,11 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
   width: 49%;
   margin: 1.2em 2% 20px 0;
 }
+.price-tables.full-col .plans .plan{
+  width:49%;
+  margin: 1.2em auto !important;
+  float:none;
+}
 
 .price-tables .plans > .plan:last-child {
   margin-right: 0;
@@ -1302,7 +1310,8 @@ p > b{font-weight:700;color:#484f58;font-size:18px;}
 }
 
 .contact {
-  padding-top: 0;
+  padding-top: 100px;
+  padding-bottom:20px;
 }
 
 .contact h2 {
@@ -1912,7 +1921,7 @@ footer p, footer a {
     font-size: 2em;
   }
 
-  .price-tables .plans .plan {
+  .price-tables .plans .plan, .price-tables.full-col .plans .plan, .price-tables.two-col .plans .plan {
     width: 100%;
     margin: 0 2% 20px 0;
   }
@@ -1920,9 +1929,18 @@ footer p, footer a {
   .price-tables .plans > .plan:nth-child(2n) {
     margin-right: 0;
   }
+  h2{
+    font-size:1.8em;
+    line-height:1.2;
+  }
+  h4{line-height:1.5}
+  .list-bullet > li{margin-bottom:10px;}
+  .plan-wrap .options li .desc{line-height:1.2;}
+  .note > a{display:block;}
 }
 
 @media handheld, only screen and (max-width: 480px) {
+
 
   .header-carousel {
     height: 620px;
