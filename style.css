@@ -1776,6 +1776,7 @@ footer p, footer a {
 }
 .service-item p{
   color:#000;
+  padding:0 30px;
 }
 .service-item img{
   width:112px;
